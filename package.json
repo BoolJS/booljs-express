@@ -1,22 +1,31 @@
 {
-    "name": "booljs-express",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "keywords": [
-        "express", "bool.js", "driver", "server"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/booljs/booljs-express"
-    },
-    "license": "GPL-3.0",
-    "author": {
-        "name": "Pablo Andrés Dorado Suárez",
-        "email": "pandres95@gentebool.com",
-        "url": "http://community.gentebool.com/pandres95"
-    },
-    "engines": {
-        "node": ">=4.0.0"
-    }
+  "name": "booljs-express",
+  "version": "0.0.1",
+  "description": "[![Build Status](https://travis-ci.org/BoolJS/booljs.svg?branch=master)](https://travis-ci.org/BoolJS/booljs) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![devDependency Status](https://david-dm.org/booljs/booljs/dev-status.svg)](https://david-dm.org/booljs/booljs#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs) [![Inline docs](http://inch-ci.org/github/booljs/booljs.svg?branch=master)](http://inch-ci.org/github/booljs/booljs)",
+  "main": "index.js",
+  "keywords": [
+    "express",
+    "bool.js",
+    "driver",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/booljs/booljs-express.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Pablo Andrés Dorado Suárez <pandres95@gentebool.com> (http://community.gentebool.com/pandres95)",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/booljs/booljs-express/issues"
+  },
+  "homepage": "https://github.com/booljs/booljs-express#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
