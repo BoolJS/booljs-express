@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (_instance, configuration) {
+module.exports = function (_instance) {
     var Express             = require('express')
     ,   bodyParser          = require('body-parser')
     ,   expressApplication  = new Express();
@@ -10,6 +10,8 @@ module.exports = function (_instance, configuration) {
         res.header('X-Powered-By', 'bool.js v0.1.0');
         next();
     });
+
+    var configuration = _instance.getComponents().configuration;
 
     // Sets listening hostname
     expressApplication.set(
