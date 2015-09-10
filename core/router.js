@@ -12,19 +12,21 @@ module.exports = function (_instance, expressApplication) {
 
     var mandatoryPoliciesMiddleware = _.filter(
         routeMiddleware, function (middleware) {
-            return middleware.type === 'mandatory';
+            return middleware.policyType === 'mandatory';
         }
     );
 
     var omittablePoliciesMiddleware = _.filter(
         routeMiddleware, function (middleware) {
-            return middleware.type !== 'mandatory';
+            return middleware.policyType !== 'mandatory';
         }
     );
 
     var routeModules = _instance.getComponents().routes;
 
-    return each(routeModules, function (module, name, next) {
+    return each(routeModules, function (Module, name, next) {
+        var module = new Module();
+
         return each(module, function (route, key, _next) {
             var applicablePolicies = [];
 
@@ -32,30 +34,33 @@ module.exports = function (_instance, expressApplication) {
                 for(var policy in mid.policies){
                     if(route[policy] === mid.policies[policy]){
                         applicablePolicies.push(mid.action(route.url, router));
-                        return next();
+                        return _n();
                     }
                 }
-                next();
+                _n();
             }).then(function () {
-                return each(omittablePoliciesMiddleware, function (mid, k, _m) {
+                return each(omittablePoliciesMiddleware, function (mid, k, _n) {
                     for(var policy in mid.policies){
                         if(route[policy] !== mid.policies[policy]){
                             applicablePolicies.push(
                                 mid.action(route.url, router)
                             );
-                            return next();
+                            return _n();
                         }
                     }
-                    next();
+                    _n();
                 });
             }).then(function () {
                 router[route.method](
                     route.url, applicablePolicies, route.action
                 );
+                _next();
             });
+        }).then(function () {
+            next();
         });
     }).then(function () {
-        require('./handlers')(router);
+        require('./handlers')(_instance.getComponents(), router);
 
         var endpointSettings = (
             _instance.getComponents().configuration.get('enpoint') ||
@@ -64,7 +69,7 @@ module.exports = function (_instance, expressApplication) {
             }
         );
         expressApplication.use(endpointSettings.base, router);
-        return q.resolve();
+        return q.resolve(expressApplication);
     });
 
 
