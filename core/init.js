@@ -17,12 +17,12 @@ module.exports = function (_instance) {
     expressApplication.set(
         'host',
         process.env.IP || process.env.HOSTNAME ||
-        configuration.hostname || '0.0.0.0'
+        configuration.get('hostname') || '0.0.0.0'
     );
 
     // Sets listening port
     expressApplication.set(
-        'port', process.env.PORT || configuration.port || 3001
+        'port', process.env.PORT || configuration.get('port') || 3001
     );
 
     // Enable body-parser middlewares
