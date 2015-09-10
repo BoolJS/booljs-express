@@ -1,0 +1,22 @@
+{
+    "name": "booljs-express",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "keywords": [
+        "express", "bool.js", "driver", "server"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/booljs/booljs-express"
+    },
+    "license": "GPL-3.0",
+    "author": {
+        "name": "Pablo Andrés Dorado Suárez",
+        "email": "pandres95@gentebool.com",
+        "url": "http://community.gentebool.com/pandres95"
+    },
+    "engines": {
+        "node": ">=4.0.0"
+    }
+}
