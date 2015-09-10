@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (_instance, expressApplication) {
-    var API                 = require('boooljs-api')
+    var API                 = require('booljs-api')
     ,   async               = require('async')
     ,   middlewarePlugins   = API.Plugins.get('middleware');
 
