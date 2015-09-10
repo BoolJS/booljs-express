@@ -29,5 +29,13 @@ module.exports = function (_instance) {
     expressApplication.use(bodyParser.urlencoded({ extended: true }));
     expressApplication.use(bodyParser.json());
 
+    // Enables Json View
+    if(!_instance.getComponents().views){
+        _instance.insertComponent('views', {});
+    }
+    _instance.insertComponent(
+        'Json', require('../views/json'), _instance.getComponents().views
+    );
+
     return q.resolve(expressApplication);
 };
