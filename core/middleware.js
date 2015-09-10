@@ -21,7 +21,7 @@ module.exports = function (_instance, expressApplication) {
             next(err);
         }
     }).then(function () {
-        return expressApplication;
+        return q.resolve(expressApplication);
     });
 
 };
