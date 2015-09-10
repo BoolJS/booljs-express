@@ -1,7 +1,7 @@
 {
   "name": "booljs-express",
   "version": "0.0.1",
-  "description": "[![Build Status](https://travis-ci.org/BoolJS/booljs.svg?branch=master)](https://travis-ci.org/BoolJS/booljs) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![devDependency Status](https://david-dm.org/booljs/booljs/dev-status.svg)](https://david-dm.org/booljs/booljs#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs) [![Inline docs](http://inch-ci.org/github/booljs/booljs.svg?branch=master)](http://inch-ci.org/github/booljs/booljs)",
+  "description": "",
   "main": "index.js",
   "keywords": [
     "express",
@@ -26,6 +26,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "body-parser": "^1.13.3",
+    "booljs-api": "0.0.4",
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "bool.js": "0.0.6",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.2"
   }
 }
