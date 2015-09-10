@@ -9,11 +9,13 @@ module.exports = function (expressApplication) {
     return listen(
         expressApplication.get('port'), expressApplication.get('host')
     ).then(function () {
-        console.log(
-            'Express server listening on http://%s:%d',
-            expressApplication.get('host'),
-            expressApplication.get('port')
-        );
+        if(process.env.NODE_ENV !== 'test'){
+            console.log(
+                'Express server listening on http://%s:%d',
+                expressApplication.get('host'),
+                expressApplication.get('port')
+            );
+        }
     });
 
 };
