@@ -16,6 +16,7 @@ module.exports = function (expressApplication) {
                 expressApplication.get('port')
             );
         }
+        return q.resolve(server);
     });
 
 };
