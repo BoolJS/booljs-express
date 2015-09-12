@@ -1,6 +1,6 @@
 {
   "name": "booljs-express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -32,7 +32,7 @@
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "bool.js": "^0.1.2",
+    "bool.js": "0.1.2",
     "expect.js": "^0.3.1",
     "mocha": "^2.3.2"
   }
