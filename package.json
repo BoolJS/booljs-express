@@ -1,7 +1,7 @@
 {
   "name": "booljs-express",
   "version": "0.1.0",
-  "description": "",
+  "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
     "express",
