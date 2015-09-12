@@ -1,10 +1,10 @@
 # Bool.js - Express Server Driver
 
-[![Build Status](https://travis-ci.org/BoolJS/booljs.svg?branch=master)](https://travis-ci.org/BoolJS/booljs) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![devDependency Status](https://david-dm.org/booljs/booljs/dev-status.svg)](https://david-dm.org/booljs/booljs#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs) [![Inline docs](http://inch-ci.org/github/booljs/booljs.svg?branch=master)](http://inch-ci.org/github/booljs/booljs)
+[![Build Status](https://travis-ci.org/BoolJS/booljs-express.svg?branch=master)](https://travis-ci.org/BoolJS/booljs-express) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs-express.svg)](https://david-dm.org/booljs/booljs-express) [![devDependency Status](https://david-dm.org/booljs/booljs-express/dev-status.svg)](https://david-dm.org/booljs/booljs-express#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs-express/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs-express) [![Inline docs](http://inch-ci.org/github/booljs/booljs-express.svg?branch=master)](http://inch-ci.org/github/booljs/booljs-express)
 
-[![Bool.js NPM icon](https://nodei.co/npm/bool.js.png)](https://npmjs.com/packages/bool.js)
+[![Bool.js NPM icon](https://nodei.co/npm/booljs-express.png)](https://npmjs.com/packages/booljs-express)
 
-[![Join the chat at https://gitter.im/BoolJS/booljs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/BoolJS/booljs-express](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs-express?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## FAQ
 
