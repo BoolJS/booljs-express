@@ -1,11 +1,11 @@
 'use strict';
 
 var API = require('booljs-api');
-API.Plugins.register(require('./middleware/cors'));
+API.Plugins.register(require('./lib/middleware/cors'));
 
 module.exports = {
-    init: require('./core/init'),
-    middleware: require('./core/middleware'),
-    router: require('./core/router'),
-    boot: require('./core/boot')
+    init: require('./lib/init'),
+    middleware: require('./lib/middleware'),
+    router: require('./lib/router'),
+    boot: require('./lib/boot')
 };
