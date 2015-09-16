@@ -1,6 +1,6 @@
 {
   "name": "booljs-express",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/booljs/booljs-express#readme",
   "scripts": {
-    "test": "mocha --recursive test"
+    "test": "mocha --timeout 5000 --recursive test"
   },
   "dependencies": {
     "async": "^1.4.2",
     "body-parser": "^1.13.3",
-    "booljs-api": "0.1.1",
+    "booljs-api": "0.1.2",
     "express": "^4.13.3"
   },
   "devDependencies": {
