@@ -7,7 +7,7 @@ describe('Bool.js', function () {
     ,   booljs_express  = resolver('');
 
     before(function () {
-        app = require('../../booljs')('com.example.api')
+        app = require('bool.js')('com.example.api')
             .setServerLoader(booljs_express)
             .setBase('example');
     });
