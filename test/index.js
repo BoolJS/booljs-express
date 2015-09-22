@@ -2,13 +2,12 @@
 'use strict';
 
 describe('Bool.js', function () {
-    var app
-    ,   resolver        = require('../lib/utils/resolve')
-    ,   booljs_express  = resolver('');
+    var resolver = require('../lib/utils/resolve')
+    ,   app;
 
     before(function () {
-        app = require('bool.js')('com.example.api')
-            .setServerLoader(booljs_express)
+        app = require('bool.js')('com.example.api', [ resolver('') ])
+            .setServerLoader('booljs-express')
             .setBase('example');
     });
 
