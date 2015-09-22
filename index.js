@@ -1,6 +1,6 @@
 'use strict';
 
-var API         = require('booljs-api')
+var API         = require('bool.js/api')
 ,   resolver    = require('./lib/utils/resolve');
 
 module.exports = new API.ServerLoader(
