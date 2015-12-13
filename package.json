@@ -1,6 +1,6 @@
 {
   "name": "booljs-express",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "async": "^1.4.2",
-    "body-parser": "^1.13.3",
+    "body-parser": "^1.14.1",
     "express": "^4.13.3"
   },
   "devDependencies": {
