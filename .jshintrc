@@ -1,8 +1,9 @@
 {
     "node": true,
     "laxcomma": true,
-    "unused": false,
-    "undef": false,
+    "unused": true,
+    "undef": true,
+    "esnext": true,
     "predef": [
         "PATH",
         "injector",
