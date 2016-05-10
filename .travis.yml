@@ -1,6 +1,8 @@
 language: node_js
+before_install:
+  - npm install -g npm@latest
+  - npm install -g bool.js@latest
 node_js:
   - 4.0
-install:
-  - npm install
-  - npm install bool.js@latest
+  - 5.0
+  - 6.0
