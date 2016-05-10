@@ -25,6 +25,9 @@
   "scripts": {
     "test": "mocha --timeout 5000 --recursive test"
   },
+  "peerDependencies": {
+    "booljs-api": "0.3.x"
+  },
   "dependencies": {
     "async": "^1.4.2",
     "body-parser": "^1.14.1",
@@ -33,5 +36,9 @@
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
   }
 }
