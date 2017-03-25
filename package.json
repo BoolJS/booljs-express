@@ -1,6 +1,6 @@
 {
-  "name": "booljs-express",
-  "version": "0.5.3",
+  "name": "booljs.express",
+  "version": "0.6.0",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -14,9 +14,10 @@
     "url": "git+ssh://git@github.com/booljs/booljs-express.git"
   },
   "license": "GPL-3.0",
-  "author": "Pablo Andrés Dorado Suárez <pandres95@gentebool.com> (http://community.gentebool.com/pandres95)",
-  "engines": {
-    "node": ">=4.0.0"
+  "author": {
+    "name": "Pablo Andrés Dorado Suárez",
+    "email": "im@pandres95.me",
+    "url": "https://bool.js.org/developer/pandres95"
   },
   "bugs": {
     "url": "https://github.com/booljs/booljs-express/issues"
@@ -26,19 +27,19 @@
     "test": "mocha --timeout 5000 --recursive test"
   },
   "peerDependencies": {
-    "booljs-api": "0.3.x"
+    "booljs.api": "0.4.x"
   },
   "dependencies": {
-    "async": "^1.4.2",
-    "body-parser": "^1.14.1",
-    "express": "^4.13.3"
+    "async": "^2.2.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
   },
   "devDependencies": {
-    "expect.js": "^0.3.1",
-    "mocha": "^2.3.2"
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   },
   "engines": {
-    "node": ">=4.0.0",
-    "npm": ">=3.0.0"
+    "node": ">=7.0.0",
+    "npm": ">=4.0.0"
   }
 }
