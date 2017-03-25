@@ -6,11 +6,11 @@ describe('Bool.js', function () {
     ,   app;
 
     before(function () {
-        app = require('bool.js')('com.example.api', [ resolver('') ])
-            .setServerLoader('booljs-express')
+        app = require('booljs')('com.example.api', [ resolver('') ])
+            .setServerLoader('booljs.express')
             .setBase('example');
     });
 
-    it('Boots using express.js', function () { return app.run(); });
+    it('Boots using express.js', () => app.run());
 
 });

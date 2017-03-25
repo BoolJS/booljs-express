@@ -1,12 +1,12 @@
 'use strict';
 
-var API         = require('booljs-api')
+var API         = require('booljs.api')
 ,   lib         = require('./lib/server')
 ,   resolver    = require('./lib/utils/resolve');
 
 module.exports = class Express extends API.ServerLoader{
     constructor(){
-        super('booljs-express', [ resolver('lib/middleware/cors') ]);
+        super('booljs.express', [ resolver('lib/middleware/cors') ]);
     }
 
     init(_instance){
