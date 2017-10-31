@@ -1,16 +1,17 @@
 /* global describe, before, it */
 'use strict';
 
-describe('Bool.js', function () {
-    var resolver = require('../lib/utils/resolve')
-    ,   app;
+const resolver = require('../lib/utils/resolve');
+const Bool = require('booljs');
 
-    before(function () {
-        app = require('booljs')('com.example.api', [ resolver('') ])
-            .setServerLoader('booljs.express')
+describe('Bool.js', function () {
+    let app;
+
+    before(() => {
+        app = new Bool('com.example.api', [ resolver('') ])
+            .setServerDrivers([ 'booljs.express' ])
             .setBase('example');
     });
 
     it('Boots using express.js', () => app.run());
-
 });

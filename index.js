@@ -1,30 +1,30 @@
 'use strict';
 
-var API         = require('booljs.api')
-,   lib         = require('./lib/server')
-,   resolver    = require('./lib/utils/resolve');
+const { ServerLoader } = require('booljs.api');
+const lib = require('./lib/server');
+const resolver = require('./lib/utils/resolve');
 
-module.exports = class Express extends API.ServerLoader{
-    constructor(){
+module.exports = class Express extends ServerLoader {
+    constructor () {
         super('booljs.express', [ resolver('lib/middleware/cors') ]);
     }
 
-    init(_instance){
-        return lib.init(_instance);
+    init (instance) {
+        return lib.init(instance);
     }
-    middleware(_instance, router, middleware){
-        return lib.middleware(_instance, router, middleware);
+    middleware (instance, router, middleware) {
+        return lib.middleware(instance, router, middleware);
     }
-    preroute(_instance, expressApplication){
-        return lib.preroute(_instance, expressApplication);
+    preroute (instance, expressApplication) {
+        return lib.preroute(instance, expressApplication);
     }
-    route(_instance, router, middleware, route){
-        return lib.route(_instance, router, middleware, route);
+    route (instance, router, middleware, route) {
+        return lib.route(instance, router, middleware, route);
     }
-    postroute(_instance, expressApplication, router){
-        return lib.postroute(_instance, expressApplication, router);
+    postroute (instance, expressApplication, router) {
+        return lib.postroute(instance, expressApplication, router);
     }
-    boot(expressApplication){
+    boot (expressApplication) {
         return lib.boot(expressApplication);
     }
 };
