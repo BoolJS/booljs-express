@@ -1,6 +1,5 @@
 language: node_js
 before_install:
-  - npm install -g npm@latest
   - npm install booljs@latest
 node_js:
-  - 7.0
+  - lts/*
