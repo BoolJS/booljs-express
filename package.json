@@ -25,7 +25,7 @@
   "homepage": "https://github.com/booljs/booljs-express#readme",
   "scripts": {
     "pretest": "eslint **/*.js",
-    "test": "NODE_ENV=test mocha --timeout 5000 test/*"
+    "test": "NODE_ENV=test mocha --exit --timeout 5000 test/*"
   },
   "peerDependencies": {
     "booljs.api": "0.5.x",
