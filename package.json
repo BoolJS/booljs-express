@@ -32,7 +32,6 @@
     "underscore": "1.x"
   },
   "dependencies": {
-    "async": "^2.2.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2"
   },
