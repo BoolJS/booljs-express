@@ -1,6 +1,6 @@
 {
   "name": "booljs.express",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/booljs/booljs-express#readme",
   "scripts": {
     "pretest": "eslint **/*.js",
-    "test": "NODE_ENV=test mocha --timeout 5000 test/*"
+    "test": "NODE_ENV=test mocha --exit --timeout 5000 test/*"
   },
   "peerDependencies": {
     "booljs.api": "0.5.x",
@@ -34,7 +34,6 @@
   "dependencies": {
     "async": "^2.2.0",
     "body-parser": "^1.18.2",
-    "booljs": "^0.7.2",
     "express": "^4.16.2"
   },
   "devDependencies": {
