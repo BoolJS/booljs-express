@@ -1,4 +1,3 @@
-/* global describe, before, it */
 'use strict';
 
 const resolver = require('../lib/utils/resolve');
@@ -6,16 +5,15 @@ const Bool = require('booljs');
 const Agent = require('supertest');
 
 describe('Bool.js', function () {
-    let app, server;
+    let server;
 
-    before(() => {
-        app = new Bool('com.example.api', [ resolver('') ])
+    before(async () => {
+        let app = await new Bool('com.example.api', [ resolver('') ])
             .setServerDrivers([ 'booljs.express' ])
-            .setBase('example');
-        server = new Agent('http://localhost:8080');
+            .setBase('example')
+            .run();
+        server = new Agent(app.server);
     });
-
-    it('Boots using express.js', () => app.run());
 
     it('GET / -> 200 OK', () => server.get('/').expect(200));
 
