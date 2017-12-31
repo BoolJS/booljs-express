@@ -34,7 +34,6 @@
   "dependencies": {
     "async": "^2.2.0",
     "body-parser": "^1.18.2",
-    "booljs": "^0.7.2",
     "express": "^4.16.2"
   },
   "devDependencies": {
