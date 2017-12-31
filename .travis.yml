@@ -1,5 +1,5 @@
 language: node_js
 before_install:
-  - npm install booljs@latest
+  - npm install booljs@latest --no-save
 node_js:
   - lts/*
