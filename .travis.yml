@@ -1,5 +1,5 @@
 language: node_js
-after_install:
+after_script:
   - npm install booljs@latest --no-save
 node_js:
   - lts/*
