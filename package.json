@@ -1,6 +1,6 @@
 {
-  "name": "booljs.express",
-  "version": "0.6.3",
+  "name": "@booljs/express",
+  "version": "0.6.4",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -17,7 +17,7 @@
   "author": {
     "name": "Pablo Andrés Dorado Suárez",
     "email": "im@pandres95.me",
-    "url": "https://bool.js.org/developer/pandres95"
+    "url": "https://bool.js.org/developers/pandres95"
   },
   "bugs": {
     "url": "https://github.com/booljs/booljs-express/issues"
