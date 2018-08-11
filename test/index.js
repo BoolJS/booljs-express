@@ -9,7 +9,7 @@ describe('Bool.js', function () {
 
     before(async () => {
         let app = await new Bool('com.example.api', [ resolver('') ])
-            .setServerDrivers([ 'booljs.express' ])
+            .setServerDrivers('booljs.express')
             .setBase('example')
             .run();
         server = new Agent(app.server);
