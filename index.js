@@ -1,6 +1,6 @@
 'use strict';
 
-const { ServerLoader } = require('booljs.api');
+const { ServerLoader } = require('@booljs/api');
 const lib = require('./lib/server');
 const resolver = require('./lib/utils/resolve');
 

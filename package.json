@@ -1,6 +1,6 @@
 {
   "name": "@booljs/express",
-  "version": "0.6.6",
+  "version": "0.7.0",
   "description": "Express driver for bool.js",
   "main": "index.js",
   "keywords": [
@@ -28,7 +28,7 @@
     "test": "NODE_ENV=test mocha --exit --timeout 5000 test/*"
   },
   "peerDependencies": {
-    "booljs.api": "0.5.x",
+    "@booljs/api": "0.6.x",
     "underscore": "1.x"
   },
   "dependencies": {
