@@ -9,6 +9,12 @@ module.exports = function (app) {
             url: '/dog',
             action: dog.list,
             cors: true
+        },
+        {
+            method: 'get',
+            url: '/error',
+            action: dog.error,
+            cors: true
         }
     ];
 };
