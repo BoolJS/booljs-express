@@ -12,6 +12,7 @@ describe('Bool.js', function () {
             .setServerDrivers('booljs.express')
             .setBase('example')
             .run();
+
         server = new Agent(app.server);
     });
 
@@ -20,4 +21,8 @@ describe('Bool.js', function () {
     it('GET /undefined -> 501 Not Implemented', () => server
         .get('/undefined')
         .expect(501));
+
+    it('GET /error -> 401 Custom Error', () => server
+        .get('/error')
+        .expect(401));
 });
